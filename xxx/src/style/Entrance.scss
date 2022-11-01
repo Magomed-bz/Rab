@@ -1,0 +1,24 @@
+@import "Header";
+@import "App";
+.Entrance{
+  form{
+    @extend %div-center;
+    a{
+      text-decoration: none;
+      p{
+        color: #00C0FF;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5em;
+        &:active{
+          color: #737373;
+        }
+      }
+    }
+    .formBlock{
+      @extend %flex-center-;
+      align-items: center;
+      min-height: 100px;
+    }
+  }
+}

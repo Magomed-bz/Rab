@@ -1,0 +1,64 @@
+@import "Header";
+@import "App";
+.bodyH{
+  .home{
+    min-height: calc(100vh - 225px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      color: #00C0FF;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: row;
+      font-size: 1.5em;
+      p{
+        font-size: 1em;
+        padding: 0;
+      }
+    }
+  }
+  footer{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #bfbfbf;
+    height: 80px;
+    ul{
+      @extend %flex-center;
+      align-items: center;
+      flex-direction: row;
+      border-radius: 10px;
+      padding: 10px;
+      li{
+        list-style: none;
+        a{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          color: white;
+          text-decoration: none;
+          font-size: 16px;
+          &:active{
+            color: #737373;
+          }
+          .logo{
+            width: 25px;
+            height: 25px;
+            color: white;
+            &:active{
+              color: #737373;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 425px){
+    footer{
+      display: flex;
+    }
+  }
+    
+  }
+

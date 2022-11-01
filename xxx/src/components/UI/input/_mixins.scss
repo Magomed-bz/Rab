@@ -1,0 +1,11 @@
+@mixin spanInpuut(){
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  color: #00C0FF;
+  transform: translateX(10px) translateY(-8px);
+  font-size: 0.80em;
+  padding: 0 9px;
+  background: white;
+}

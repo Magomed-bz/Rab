@@ -1,0 +1,18 @@
+@use "mixins";
+.inputDateBox {
+  position: relative;
+  width: 120px;
+
+  span {
+    @include mixins.spanInpuut();
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00C0FF;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+  }
+}

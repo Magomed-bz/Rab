@@ -1,0 +1,17 @@
+@import "src/style/App";
+.buttonBox{
+  @extend %flex-center;
+  width: 100%;
+  button{
+    width: 250px;
+    height: 40px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background: #FE7E00;
+    color: white;
+    margin-bottom: 60px;
+    &:active{
+      box-shadow: 10px 5px 5px rgba(0,0,0, .3);
+    }
+  }
+}

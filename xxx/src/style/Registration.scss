@@ -1,0 +1,25 @@
+@import "Header";
+@import "App";
+.Registration{
+  form{
+    @extend %div-center;
+    .formInput{
+      @extend %flex-center-;
+      min-height: 100px;
+    }
+    .formInputRadio{
+      transform: translateX(0px) translateY(-8px);
+      @extend %div-center;
+      align-items: center;
+      min-height: 10px;
+      span{
+        color: #00C0FF;
+      }
+      div{
+        span{
+          color: black;
+        }
+      }
+    }
+  }
+}
